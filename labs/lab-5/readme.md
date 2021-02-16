@@ -9,7 +9,7 @@ Later you will try applying a Systems Manager Document to an instance that confi
 3. Are you able to extract the session and use it in your CLI or from a client or instance with AWS CLI installed by running "aws configure"? (hint 2: Invoke-RestMethod -uri http://169.254.169.254/latest/meta-data/iam/security-credentials/)
 4. Now use AWS Sessions Manager to connect to the instance named EC2-B. Try accessing the local metadata endpoint using the same method.
 5. Figure out how to retrieve a token to access the instance metadata service. Why is this more secure? Try extracing the credentials and use them from another instance with aws cli installed and running "aws configure". Does the credentials work?
-6. Go to Systems Manager, under Node Management select "Run command" > Click the "Run Command" button. Search for the document "ApplyMicrosoftSecurityComplianceBaseline". Make sure the owner is account "454212039551"!@
+6. Go to Systems Manager, under Shared Resources select "Documents" > "All documents". Search for the document "ApplyMicrosoftSecurityComplianceBaseline". Make sure the owner is account "454212039551"!@
 7. Inspect the document content. What are the unknown risks when running this document? How does it compare to any other software you download and install?
 8. Run the document by choosing "Specify instances manually". Select your instances (EC2-A and EC2-B). 
 9. Select one of the instances
